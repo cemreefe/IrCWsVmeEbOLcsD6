@@ -18,7 +18,7 @@ def fit_classifiers(X_train, y_train, X_test, y_test):
 	    "Decision Tree": DecisionTreeClassifier(max_depth=5), 
 	    "Random Forest": RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1), 
 	    "Neural Net":    MLPClassifier(alpha=1, max_iter=1000), 
-	    "XGB":           xgb.XGBClassifier(),   
+	    "XGB":           xgb.XGBClassifier(use_label_encoder=False, eval_metric="logloss"),   
 	}
 
 	accuracies = []
