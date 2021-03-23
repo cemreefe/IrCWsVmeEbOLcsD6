@@ -1,5 +1,10 @@
 # IrCWsVmeEbOLcsD6
 
+### How to install
+```
+pip3 install -r requirements.txt
+```
+
 ### How to run?
 
 To run without `matplotlib` & `seaborn` plots:
