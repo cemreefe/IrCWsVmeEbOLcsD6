@@ -5,6 +5,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
 
+import matplotlib.pyplot as plt
+
 def bars(value, hi, lo, length=20):
 	bars = int(value)//int((hi-lo)/length)
 	return '▄'*bars + '_'*(20-bars)
